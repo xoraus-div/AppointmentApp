@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :offices
   root 'physicians#index'
   resources :appointments
   resources :physicians
