@@ -103,3 +103,5 @@ m.load_bundler!
 if m.invoked_as_script?
   load Gem.bin_path("bundler", "bundle")
 end
+
+# This Homework 3 belongs to Divyanshu Shekhar, no one has the permission of copying this homework in any way. If I (Divyanshu Shekhar) give someone the permission to copy this homework, i will ask you to change this line into somehting else.
