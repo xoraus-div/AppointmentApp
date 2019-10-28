@@ -71,6 +71,6 @@ class PhysiciansController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def physician_params
-      params.require(:physician).permit(:name, :speciality, offices_attributes: Office.attribute_names.map(&:to_sym).push(:_destroy))
+      params.require(:physician).permit(:name, :speciality, offices_attributes: [:id, :street, :zip, :phone, :_destroy])
     end
 end

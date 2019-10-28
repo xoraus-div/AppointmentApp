@@ -1,3 +1,3 @@
 class Office < ApplicationRecord
-  belongs_to :physician, optional: true
+  belongs_to :physician
 end

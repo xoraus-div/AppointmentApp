@@ -3,6 +3,6 @@ class Physician < ApplicationRecord
   has_many :patients, through: :appointments
   validates :name, presence: true
   validates :speciality, presence: true
-  has_many :offices, dependent: :destroy
-  accepts_nested_attributes_for :offices, allow_destroy: true, reject_if: :all_blank
+  has_many :offices
+  accepts_nested_attributes_for :offices, reject_if: :all_blank, allow_destroy: true
 end
